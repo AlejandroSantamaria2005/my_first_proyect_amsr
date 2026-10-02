@@ -12,6 +12,7 @@ async function bootstrap() {
   .setTitle('My First Project API')
   .setDescription('API de la guía didáctica')
   .setVersion('1.0')
+  .addBearerAuth()
   .build();
 const document = SwaggerModule.createDocument(app, config);
 SwaggerModule.setup('api', app, document);
